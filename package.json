@@ -2,9 +2,12 @@
   "name": "e-commerce",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,9 @@
   },
   "homepage": "https://github.com/zackaryanderson/e-commerce#readme",
   "dependencies": {
-    "mysql2": "^2.2.5"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0"
   }
 }

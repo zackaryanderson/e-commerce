@@ -1,0 +1,22 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackaryanderson/e-commerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackaryanderson/e-commerce/issues"
+  },
+  "homepage": "https://github.com/zackaryanderson/e-commerce#readme",
+  "dependencies": {
+    "mysql2": "^2.2.5"
+  }
+}

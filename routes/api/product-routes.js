@@ -32,6 +32,9 @@ router.get('/:id', (req, res) => {
   // be sure to include its associated Category and Tag data
   Product.findOne({
     attributes: ['id','product_name','price','stock','category_id' ],
+    where: {
+      id: req.params.id
+    },
     include: [
       {
         model: Category,
@@ -39,7 +42,8 @@ router.get('/:id', (req, res) => {
       },
       {
         model: Tag,
-        attributes: ['tag_name']
+        attributes: ['tag_name'],
+        //exclude: ['product_tag']
       }
     ]
   })
